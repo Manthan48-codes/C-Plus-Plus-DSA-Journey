@@ -23,7 +23,4 @@ int main(){
     cout << "Array is empty or not : " << A.empty() << endl ;
 
     //CAPACITY() TO CHECK CAPACITY OF THE ARRAY 
-    cout << "Capacity of array : " << A.capacity() << endl ;
-
-
 }
