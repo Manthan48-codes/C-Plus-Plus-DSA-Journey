@@ -21,6 +21,5 @@ int main(){
     
     //EMPTY() TO CHECK ARRAY IS EMPTY OR NOT 
     cout << "Array is empty or not : " << A.empty() << endl ;
-
-    //CAPACITY() TO CHECK CAPACITY OF THE ARRAY 
+    
 }
