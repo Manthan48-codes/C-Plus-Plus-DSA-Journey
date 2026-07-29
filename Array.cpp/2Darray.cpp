@@ -404,4 +404,86 @@ int main(){
      */
 
 //Search in a 2D Matrix I LeetCode
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+bool searchMatrix(vector<vector<int>> &matrix, int target)
+{
+    int row = matrix.size();
+    int col = matrix[0].size();
+
+    int s = 0;
+    int e = col - 1;
+
+    while (s < row && e >= 0)
+    {
+        int element = matrix[s][e];
+
+        if (element == target)
+        {
+            return true;
+        }
+        else if (element > target)
+        {
+            e--;
+        }
+        else
+        {
+            s++;
+        }
+    }
+
+    return false;
+}
+
+int main()
+{
+    int row, col;
+
+    cout << "Enter number of rows: ";
+    cin >> row;
+
+    cout << "Enter number of columns: ";
+    cin >> col;
+
+    vector<vector<int>> matrix(row, vector<int>(col));
+
+    cout << "Enter the elements of matrix:\n";
+
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            cin >> matrix[i][j];
+        }
+    }
+
+    cout << "\nMatrix is:\n";
+
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    int target;
+    cout << "\nEnter target element: ";
+    cin >> target;
+
+    if (searchMatrix(matrix, target))
+    {
+        cout << "Element Found";
+    }
+    else
+    {
+        cout << "Element Not Found";
+    }
+
+    return 0;
+}
 
