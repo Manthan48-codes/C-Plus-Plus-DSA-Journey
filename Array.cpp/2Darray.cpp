@@ -292,13 +292,13 @@ void Rotate90(vector<vector<int>>& arr, int m)
 
 int main()
 {
-    vector<vector<int>> arr(3, vector<int>(3));
+    vector<vector<int>> arr(4, vector<int>(4));
 
     cout << "Enter your array:\n";
 
-    for(int row = 0; row < 3; row++)
+    for(int row = 0; row < 4; row++)
     {
-        for(int col = 0; col < 3; col++)
+        for(int col = 0; col < 4; col++)
         {
             cin >> arr[row][col];
         }
@@ -306,9 +306,9 @@ int main()
 
     cout << "\nBefore 90 Degree Rotation:\n";
 
-    for(int row = 0; row < 3; row++)
+    for(int row = 0; row < 4; row++)
     {
-        for(int col = 0; col < 3; col++)
+        for(int col = 0; col < 4; col++)
         {
             cout << arr[row][col] << " ";
         }
@@ -319,9 +319,9 @@ int main()
 
     cout << "\nAfter 90 Degree Clockwise Rotation:\n";
 
-    for(int row = 0; row < 3; row++)
+    for(int row = 0; row < 4; row++)
     {
-        for(int col = 0; col < 3; col++)
+        for(int col = 0; col < 4; col++)
         {
             cout << arr[row][col] << " ";
         }
@@ -330,7 +330,6 @@ int main()
 
     return 0;
 }
-
 
 //BINARY SEARCH 1
 #include<iostream>
@@ -401,7 +400,7 @@ int main(){
 
     return 0 ;  
 }
-     */
+  /*
 
 //Search in a 2D Matrix I LeetCode
 #include <iostream>
@@ -486,4 +485,4 @@ int main()
 
     return 0;
 }
-
+    */
